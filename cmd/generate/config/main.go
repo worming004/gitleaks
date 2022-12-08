@@ -48,6 +48,7 @@ func main() {
 	configRules = append(configRules, rules.DiscordClientID())
 	configRules = append(configRules, rules.DiscordClientSecret())
 	configRules = append(configRules, rules.Doppler())
+	configRules = append(configRules, rules.DotnetAppSettings())
 	configRules = append(configRules, rules.DropBoxAPISecret())
 	configRules = append(configRules, rules.DropBoxLongLivedAPIToken())
 	configRules = append(configRules, rules.DropBoxShortLivedAPIToken())
