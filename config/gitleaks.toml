@@ -301,6 +301,22 @@ keywords = [
 ]
 
 [[rules]]
+description = "Dotnet Appsettings ConnectionStrings"
+id = "dotnet-appsettings-connection-strings"
+regex = '''[pP]assword=[^;":]'''
+keywords = [
+    "connectionstrings",
+]
+
+[[rules]]
+description = "Dotnet Esb Password"
+id = "dotnet-esb-password"
+regex = '''[pP]assword":\s*".+"'''
+keywords = [
+    
+]
+
+[[rules]]
 description = "Droneci Access Token"
 id = "droneci-access-token"
 regex = '''(?i)(?:droneci)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}([a-z0-9]{32})(?:['|\"|\n|\r|\s|\x60|;]|$)'''
@@ -489,9 +505,6 @@ keywords = [
     "key","api","token","secret","client","passwd","password","auth","access",
 ]
 [rules.allowlist]
-paths = [
-  '''Database.refactorlog'''
-]
 stopwords= [
     "client",
     "endpoint",
