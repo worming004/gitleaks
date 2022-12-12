@@ -28,3 +28,15 @@ func DotnetAppSettingsEsbPassword() *config.Rule {
 	tps := []string{`"Password": "vqlu3"`}
 	return validate(r, tps, nil)
 }
+
+func DotnetAppSettingsClientSecret() *config.Rule {
+	r := config.Rule{
+		Description: "Dotnet Client Secret",
+		RuleID:      "dotnet-client-secret",
+		Regex:       regexp.MustCompile(`[cC]lient[sS]ecret":\s*".+"`),
+	}
+
+	tps := []string{`"ClientSecret": "vqlu3"`}
+	return validate(r, tps, nil)
+}
+

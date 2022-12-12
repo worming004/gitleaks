@@ -309,6 +309,14 @@ keywords = [
 ]
 
 [[rules]]
+description = "Dotnet Client Secret"
+id = "dotnet-client-secret"
+regex = '''[cC]lient[sS]ecret":\s*".+"'''
+keywords = [
+    
+]
+
+[[rules]]
 description = "Dotnet Esb Password"
 id = "dotnet-esb-password"
 regex = '''[pP]assword":\s*".+"'''
